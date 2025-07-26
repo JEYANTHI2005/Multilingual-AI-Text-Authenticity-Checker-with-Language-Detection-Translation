@@ -1,7 +1,6 @@
 streamlit
-transformers
 pandas
 scikit-learn
-numpy
-torch  
-sentencepiece 
+transformers
+torch
+sentencepiece
