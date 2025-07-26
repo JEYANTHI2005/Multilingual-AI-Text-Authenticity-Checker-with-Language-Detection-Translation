@@ -1,3 +1,5 @@
+streamlit
 scikit-learn
-gradio
+pandas
+transformers
 numpy
