@@ -1,12 +1,17 @@
-# main.py
-
+import os
 import streamlit as st
 import pandas as pd
 import pickle
-import os
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
+
+# Fallback in case sentencepiece is missing
+try:
+    import sentencepiece
+except ImportError:
+    os.system("pip install sentencepiece==0.1.99")
+
 from transformers import pipeline
 
 # --- Globals ---
