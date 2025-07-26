@@ -1,3 +1,5 @@
+# main.py
+
 import streamlit as st
 import pandas as pd
 import pickle
@@ -102,7 +104,7 @@ tab1, tab2, tab3 = st.tabs(["📚 Train Models", "🔍 Predict Text", "🌐 Tran
 # === Tab 1: Training ===
 with tab1:
     st.subheader("Train AI & Language Detection Models")
-
+    
     ai_file = st.file_uploader("Upload AI CSV ('Text', 'Label')", type='csv')
     if st.button("Train AI Detector"):
         if ai_file:
