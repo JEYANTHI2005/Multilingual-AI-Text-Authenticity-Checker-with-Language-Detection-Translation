@@ -3,4 +3,5 @@ pandas
 scikit-learn
 transformers
 torch
-sentencepiece
+sentencepiece==0.1.99
+
